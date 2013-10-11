@@ -5,7 +5,7 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'bootstrap-sass-rails'
 
@@ -57,4 +57,6 @@ group :test do
 
 end
 
+gem 'rails_12factor', group: :production
 
+ruby '2.0.0'
