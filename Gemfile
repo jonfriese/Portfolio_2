@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 gem 'rails', '3.2.14'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
 
 gem 'bootstrap-sass-rails'
 
@@ -39,6 +43,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :development, :test do
+  gem "sqlite3"
   gem "minitest", "> 4.0"
   gem "minitest-focus"
   gem "minitest-colorize"
@@ -54,9 +59,6 @@ end
 
 group :test do
   gem "turn"
-
 end
 
-gem 'rails_12factor', group: :production
 
-ruby '2.0.0'
