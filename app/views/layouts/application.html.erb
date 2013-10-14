@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>Jon Friese</title>
     <meta name="boostrap" content="width=device-width,initial-scale=1.0">
+
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
   </head>
-  <body>
 
+  <body>
     <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -38,11 +39,17 @@
         <%= yield %>
         <h2>Hello. I'm Jon. I'm currently participating in Code Fellows' Ruby on Rails bootcamp.</h2>
         <p><a class="btn btn-warning btn-lg">Sign Up Today <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+
+        <% flash.each do |key, value| %>
+           <div class="<%= flash_class(key) %>">
+              <%= value %>
+           </div>
+        <% end %>
+
       </div> <!-- /.container -->
     </div> <!-- /.jumbotron -->
 
     <div class="container">
-
       <h3 id="benefits" class="subhead">Why Use This Product</h3>
       <div class="row">
         <div class="col-md-4 col-sm-6 benefit">
