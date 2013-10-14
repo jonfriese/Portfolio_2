@@ -6,6 +6,6 @@ By: Jon Friese
 
 ## Description
 
-This app is being designed to be my personal portfolio. Ii is being built using Rails' best practices and BDD.
+This app is being designed to be my personal portfolio. It is being built using Rails' best practices and BDD.
 
 
