@@ -14,4 +14,5 @@ deploy:
     secure: fg5jKUcIilcMPrgl8ljpVJiGTh2yNtURvhuQQ3WINqbwNXVyPdCfKThy0HEylBBVv8YpgeTH8dvfrr4l33TIGTXrfLwMNxUbRmB7HpkTeJxfOAiFZv7dYph0ptzEof2HvX2eBjZeHWXYzo/o0b5xwHxvWB6x+F+Z+3bzZ/h/NfE=
   app: gentle-dusk-2093
   on:
+    rvm: 2.0.0
     repo: noj33/Portfolio_2
