@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+
   def index
     @projects = Project.all
   end
@@ -30,10 +31,11 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       if @project.update_attributes(params[:project])
-        redirect_to @project, notice: 'Project was successfully updated.'
+        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+        format.json { head :no_content }
       else
-        format.html { render action: "new" }
-        format.json { render json: @post.errors, status: :unprocessable_entity }
+        format.html { render action: "edit" }
+        format.json { render json: @projects.errors, status: :unprocessable_entity }
       end
     end
   end
