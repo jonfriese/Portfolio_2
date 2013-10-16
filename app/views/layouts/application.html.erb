@@ -27,8 +27,13 @@
             <li><%= link_to 'Blog', posts_path %></li>
             <li><%= link_to 'Portfolio', projects_path %></li>
             <li><a href="#contact">Contact Me</a></li>
-            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
-            <li><button class="btn btn-warning btn-sm navbar-btn">Sign Up</button></li>
+            <% if current_user.present? %>
+              <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to 'Sign In', user_session_path %></li>
+              <li><%= link_to 'Sign Up', new_user_registration_path%></button></li>
+            <% end %>
+
           </ul>
         </div> <!-- /.navbar-collapse -->
       </div> <!-- /.container -->
