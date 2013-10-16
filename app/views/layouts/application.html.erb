@@ -24,9 +24,10 @@
 
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#blog" class="nav-link">Blog</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
+            <li><%= link_to 'Blog', posts_path %></li>
+            <li><%= link_to 'Portfolio', projects_path %></li>
             <li><a href="#contact">Contact Me</a></li>
+            <li><%= link_to 'Sign Up', new_user_registration_path %></li>
             <li><button class="btn btn-warning btn-sm navbar-btn">Sign Up</button></li>
           </ul>
         </div> <!-- /.navbar-collapse -->

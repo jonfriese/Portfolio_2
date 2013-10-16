@@ -71,7 +71,6 @@ module Portfolio
         g.test_framework :mini_test, :spec => true
         g.helper false
     end
-
   end
 end
 

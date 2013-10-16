@@ -3,8 +3,8 @@ require "test_helper"
 feature "editing a project" do
   scenario "editing an existing project" do
     #Given a project
-    project = Project.create(name: "test", technologies_used: "Rails")
-    visit edit_project_path(project)
+
+    visit edit_project_path(projects(:one))
 
     #When I make changes
     fill_in "Name", with: "My Portfolio"
