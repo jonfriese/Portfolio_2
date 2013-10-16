@@ -1,4 +1,4 @@
 fake:
-  email: test@goole.com
+  email: test@google.com
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
 

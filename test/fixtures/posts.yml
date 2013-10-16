@@ -1,7 +1,8 @@
 cr:
   title: A title
   body: A body
-
+  author: fake
 cf:
   title: let's go
   body: here we go
+  author: fake
