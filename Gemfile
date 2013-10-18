@@ -3,6 +3,7 @@ ruby '2.0.0'
 
 gem 'rails', '3.2.14'
 gem 'devise'
+gem 'pundit'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

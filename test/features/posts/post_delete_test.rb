@@ -1,21 +1,28 @@
 require "test_helper"
 
-feature "Deleting a Post" do
-  scenario "post is deleted with a click" do
+def editor_post
 
-  sign_in
+  sign_in(:editor)
 
-  @only = posts(:cr).id
-
-  #Given I have a existing post
   visit posts_path
+  click_on "New Post"
+  fill_in "Title", with: "Gary Payton"
+  fill_in "Body", with: "Is da best!!"
+  click_on "Create Post"
 
-  #When I click the delete link
-  puts "/projects/#{@only}"
-  click_link('Destroy', href: "/posts/#{@only}")
+  post_id = current_url.split('/').last
+end
 
-  #Then post is destroyed and no longer seen
-  page.wont_have_content posts(:cr).title
+feature "Deleting a Post" do
+  scenario "editor can delete a post" do
 
+    sign_in
+    visit posts_path
+
+    click_link('Destroy', href: "/posts/#{posts(:cr).id}")
+
+    #Then post is destroyed and no longer seen
+
+    page.wont_have_content "Gary Payton"
   end
 end

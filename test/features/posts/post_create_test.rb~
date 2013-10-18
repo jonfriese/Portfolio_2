@@ -20,8 +20,8 @@ feature "creating a post" do
 
     # Add a success message
     page.text.must_include 'Post was successfully created.'
-    assert page.has_css? "#author"
-    page.text.must_include users(:editor).email
+    page.has_css? "#author"
+    page.text.must_include users(:fake).email
 
   end
 end

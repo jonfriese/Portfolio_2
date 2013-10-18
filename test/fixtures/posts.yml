@@ -1,9 +1,11 @@
 cr:
   title: A title
   body: A body
-  author: fake
+  author: editor
+  published: true
 
 cf:
   title: let's go
   body: here we go
-  author: fake
+  author: editor
+  published: true

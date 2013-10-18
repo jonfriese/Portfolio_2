@@ -1,4 +1,4 @@
-<h1>Listing posts</h1>
+<h1>Blog</h1>
 
 <table>
   <tr>
@@ -8,14 +8,22 @@
     <th></th>
     <th></th>
   </tr>
-
 <% @posts.each do |post| %>
-  <tr>
+  <tr id="<%= dom_id(post) %>">
     <td><%= post.title %></td>
-    <td><%= post.body %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <%= post.body %>
+    </td>
+    <td><%= link_to 'Show', post, class: "btn" %></td>
+    <% if current_user && policy(post).update? %>
+      <td>
+        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-default" %>
+        <p class="pull-right"><%= "Published" if post.published %></p>
+      </td>
+    <% end %>
+    <% if current_user && policy(post).destroy? %>
+      <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
@@ -23,3 +31,4 @@
 <br />
 
 <%= link_to 'New Post', new_post_path %>
+

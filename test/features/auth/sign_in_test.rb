@@ -7,7 +7,7 @@ feature " a user can sign in" do
 
     click_on "Sign In"
 
-    fill_in "Email", with: users(:fake).email
+    fill_in "Email", with: users(:test).email
     fill_in "Password", with: "password"
 
     click_on "Sign in"
