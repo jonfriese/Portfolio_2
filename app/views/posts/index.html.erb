@@ -17,7 +17,7 @@
     <td><%= link_to 'Show', post, class: "btn" %></td>
     <% if current_user && policy(post).update? %>
       <td>
-        <%= link_to 'Edit', edit_post_path(post), class: "btn btn-default" %>
+        <%= link_to 'Edit', edit_post_path(post) %>
         <p class="pull-right"><%= "Published" if post.published %></p>
       </td>
     <% end %>
