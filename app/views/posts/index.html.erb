@@ -15,13 +15,13 @@
       <%= post.body %>
     </td>
     <td><%= link_to 'Show', post, class: "btn" %></td>
-    <% if current_user && policy(post).update? %>
+    <% if policy(post).edit? %>
       <td>
         <%= link_to 'Edit', edit_post_path(post) %>
         <p class="pull-right"><%= "Published" if post.published %></p>
       </td>
     <% end %>
-    <% if current_user && policy(post).destroy? %>
+    <% if policy(post).destroy? %>
       <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
     <% end %>
   </tr>

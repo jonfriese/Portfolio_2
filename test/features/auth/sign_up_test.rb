@@ -8,10 +8,12 @@ feature "user sign up authorization" do
     click_link "Sign Up"
 
     fill_in "Email", with: "test@teset.com"
-    fill_in "Password", with: "test"
-    fill_in "Password confirmation", with: "test"
+    fill_in "Password", with: "test1234"
+    fill_in "Password confirmation", with: "test1234"
 
-    page.text.must_include "Welcome"
-    page.text.wont_include "There was a problem"
+    click_on "Sign up"
+
+    page.text.must_include "Welcome!"
+    page.text.wont_include "prohibited this user"
   end
 end

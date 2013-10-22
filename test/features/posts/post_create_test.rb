@@ -24,4 +24,14 @@ feature "creating a post" do
     page.text.must_include users(:editor).email
 
   end
+
+  scenario "authors can't publish" do
+    # Given a new author's post
+    sign_in(:author)
+    # When I visit the new page
+    visit new_post_path
+
+    # There is no checkbox for published
+    page.wont_have_field('published')
+  end
 end

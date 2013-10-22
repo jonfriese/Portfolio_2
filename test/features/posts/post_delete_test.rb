@@ -17,6 +17,7 @@ feature "Deleting a Post" do
   scenario "editor can delete a post" do
 
     sign_in
+
     visit posts_path
 
     click_link('Destroy', href: "/posts/#{posts(:cr).id}")
