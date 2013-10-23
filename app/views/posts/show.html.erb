@@ -16,7 +16,28 @@
   <%= @post.body %>
 </p>
 
-<%= render 'comments/form' %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+
+<p>
+  <b><font size="6"><u>COMMENTS</u></font></b>
+</p>
+
+
+<% @comments.each do |comment| %>
+  <tr id="<%= dom_id(comment) %>">
+    <td>"comment.content"</td>
+  </tr>
+<% end %>
+
+
+<p>
+  <b><font size="6"><u>ADD A COMMENT</u></font></b>
+</p>
+
+<%= render 'comments/form' %>
+
+
+

@@ -23,10 +23,7 @@ class PostPolicy < ApplicationPolicy
   end
 
   def edit?
-    if user.present?
-      return true if user.editor?
-      user.id == post.author_id
-    end
+    post.authored_by?(user) || user.editor? if user.present?
   end
 
   class Scope < Struct.new(:user, :scope)

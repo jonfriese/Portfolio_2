@@ -7,6 +7,7 @@ gem 'pundit'
 gem 'pry-rails'
 gem 'omniauth-twitter'
 gem 'figaro'
+gem 'strong_parameters'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

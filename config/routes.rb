@@ -3,9 +3,14 @@ Portfolio::Application.routes.draw do
 
 
   devise_for :users, controllers: {omniauth_callbacks: "omniauth_callbacks"}
-  resources :comments
-  resources :posts
-  resources :projects
+
+  resources :posts do
+    resources :comments
+  end
+
+  resources :projects do
+    resources :comments
+  end
 
   root :to => 'home#index'
   # The priority is based upon order of creation:
