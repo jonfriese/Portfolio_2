@@ -1,8 +1,8 @@
 require "test_helper"
 
-def editor_post
+def author_post
 
-  sign_in(:editor)
+  sign_in(:author)
 
   visit posts_path
   click_on "New Post"
@@ -23,6 +23,16 @@ feature "Deleting a Post" do
     click_link('Destroy', href: "/posts/#{posts(:cr).id}")
 
     #Then post is destroyed and no longer seen
+
+    page.wont_have_content "zimbabwe"
+  end
+
+  scenario "an author can delete their own post" do
+
+    post_id = author_post
+
+    click_on "Back"
+    click_link("Destroy", href: "/posts/#{post_id}")
 
     page.wont_have_content "Gary Payton"
   end
