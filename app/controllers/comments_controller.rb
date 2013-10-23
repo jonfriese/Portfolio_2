@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def create
-  @comment = Comment.new(comment_params)
+  @comment = Comment.new(params[:comment])
   @post = @comment.post
     if @comment.save
       flash[:notice] = "Comment is awaiting moderation"
