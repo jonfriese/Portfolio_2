@@ -597,8 +597,8 @@
         null,
         null,
         1,
-        15,
-        15,
+        16,
+        16,
         0,
         0,
         0,
@@ -614,11 +614,11 @@
       "/home/jon/rails/Portfolio/app/controllers/comments_controller.rb": [
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         0,
         null,
@@ -629,6 +629,7 @@
         1,
         1,
         1,
+        null,
         null
       ],
       "/home/jon/rails/Portfolio/app/controllers/home_controller.rb": [
@@ -663,13 +664,13 @@
         null,
         null,
         1,
-        4,
-        4,
-        4,
+        6,
+        6,
+        6,
         null,
-        4,
-        4,
-        4,
+        6,
+        6,
+        6,
         null,
         null,
         null,
@@ -737,7 +738,7 @@
         null,
         1,
         1,
-        8,
+        10,
         null,
         null
       ],
@@ -1068,7 +1069,17 @@
         null,
         1,
         1,
+        null,
         1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
         null,
         null
       ],
@@ -1183,6 +1194,6 @@
         null
       ]
     },
-    "timestamp": 1382490422
+    "timestamp": 1382491202
   }
 }

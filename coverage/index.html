@@ -14,27 +14,27 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-22T18:07:02-07:00">2013-10-22T18:07:02-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-22T18:20:02-07:00">2013-10-22T18:20:02-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.28%</span></span>
+    (<span class="covered_percent"><span class="green">92.66%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.26
+         1.29
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>39</b> files in total.
-    <b>390</b> relevant lines. 
-    <span class="green"><b>356</b> lines covered</span> and
-    <span class="red"><b>34</b> lines missed </span>
+    <b>395</b> relevant lines. 
+    <span class="green"><b>366</b> lines covered</span> and
+    <span class="red"><b>29</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#6a1170efa99e774773a70a725b3e74055e6afa11" class="src_link" title="app/controllers/comments_controller.rb">app/controllers/comments_controller.rb</a></td>
-        <td class="red strong">25.0 %</td>
+        <td class="yellow strong">87.5 %</td>
         <td>12</td>
         <td>8</td>
-        <td>2</td>
-        <td>6</td>
-        <td>0.3</td>
+        <td>7</td>
+        <td>1</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>47</td>
         <td>43</td>
         <td>4</td>
-        <td>2.1</td>
+        <td>2.4</td>
       </tr>
       
       <tr>
@@ -117,7 +117,7 @@
         <td>7</td>
         <td>4</td>
         <td>3</td>
-        <td>4.6</td>
+        <td>4.9</td>
       </tr>
       
       <tr>
@@ -133,7 +133,7 @@
       <tr>
         <td class="strong"><a href="#fdf5406cb8bae8de5fde82e748de3a79a3c4754e" class="src_link" title="app/models/comment.rb">app/models/comment.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
+        <td>5</td>
         <td>3</td>
         <td>3</td>
         <td>0</td>
@@ -393,9 +393,9 @@
       <tr>
         <td class="strong"><a href="#155bdf9565b54b329edddc82135488630f027b04" class="src_link" title="test/features/posts/create_comment_test.rb">test/features/posts/create_comment_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
+        <td>17</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -501,11 +501,11 @@
         <div class="source_table" id="6a1170efa99e774773a70a725b3e74055e6afa11">
   <div class="header">
     <h3>app/controllers/comments_controller.rb</h3>
-    <h4><span class="red">25.0 %</span> covered</h4>
+    <h4><span class="yellow">87.5 %</span> covered</h4>
     <div>
       <b>8</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -524,32 +524,32 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  @comment = Comment.new(comment_params)</code>
+          <code class="ruby">  @comment = Comment.new(params[:comment])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="4">
-          
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
           <code class="ruby">  @post = @comment.post</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="5">
-          
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
           <code class="ruby">    if @comment.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:notice] = &quot;Comment is awaiting moderation&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to @post</code>
         </li>
@@ -800,20 +800,20 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="13">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="13">
+          <span class="hits">6</span>
           
           <code class="ruby">    @commentable = @post</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="14">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="14">
+          <span class="hits">6</span>
           
           <code class="ruby">    @comment = @commentable.comments</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="15">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="15">
+          <span class="hits">6</span>
           
           <code class="ruby">    @comment = Comment.new</code>
         </li>
@@ -824,20 +824,20 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="17">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="18">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="18">
+          <span class="hits">6</span>
           
           <code class="ruby">      format.html # show.html.erb</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="19">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="19">
+          <span class="hits">6</span>
           
           <code class="ruby">      format.json { render json: @post }</code>
         </li>
@@ -1244,8 +1244,8 @@
           <code class="ruby">  def set_post</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="87">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="87">
+          <span class="hits">10</span>
           
           <code class="ruby">    @post = Post.find(params[:id])</code>
         </li>
@@ -1616,14 +1616,14 @@
           <code class="ruby"> def flash_class(level)</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="5">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="16" data-linenumber="5">
+          <span class="hits">16</span>
           
           <code class="ruby">  case level</code>
         </li>
       
-        <li class="covered" data-hits="15" data-linenumber="6">
-          <span class="hits">15</span>
+        <li class="covered" data-hits="16" data-linenumber="6">
+          <span class="hits">16</span>
           
           <code class="ruby">   when :notice then &quot;alert alert-info&quot;</code>
         </li>
@@ -1733,10 +1733,16 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_accessible :approved, :author, :author_email, :author_url, :content, :referrer, :user_agent, :user_ip</code>
+          <code class="ruby">  attr_accessible :approved, :author, :author_email, :author_url,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  :content, :referrer, :user_agent, :user_ip, :post_id</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -7037,8 +7043,8 @@
     <h3>test/features/posts/create_comment_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7067,22 +7073,82 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  scenario &quot;the user is allowed to comment&quot; do</code>
+          <code class="ruby">  scenario &quot;a signed in user is allowed to comment&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit root_path</code>
+          <code class="ruby">    visit post_path(posts(:cr))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in :comment_author, with:       &quot;Bill&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in :comment_author_email, with: &quot;Bill@example.com&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in :comment_content, with:      &quot;Dis posts sucks&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Submit for approval&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    page.text.must_include &quot;Comment is awaiting moderation&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
