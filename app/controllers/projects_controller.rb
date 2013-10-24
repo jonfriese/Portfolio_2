@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_filter :set_project, only: [:show, :edit, :update, :destroy]
 
   def index
     @projects = Project.all
@@ -19,7 +20,14 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    @project = Project.find(params[:id])
+    @commentable = @project
+    @comments = @commentable.comments
+    @comment = Comment.new
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @post }
+    end
   end
 
   def edit
@@ -44,6 +52,11 @@ class ProjectsController < ApplicationController
       format.html { redirect_to projects_url }
       format.json { head :no_content }
     end
+  end
+
+private
+  def set_project
+    @project = Project.find(params[:id])
   end
 
 end

@@ -28,7 +28,7 @@
 
 <% @comments.each do |comment| %>
   <tr id="<%= dom_id(comment) %>">
-    <td>"comment.content"</td>
+    <td><%= comment.content %></td>
   </tr>
 <% end %>
 

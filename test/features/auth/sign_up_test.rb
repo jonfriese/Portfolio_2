@@ -7,7 +7,7 @@ feature "user sign up authorization" do
 
     click_link "Sign Up"
 
-    fill_in "Email", with: "test@teset.com"
+    fill_in "Email", with: "test@example.com"
     fill_in "Password", with: "test1234"
     fill_in "Password confirmation", with: "test1234"
 

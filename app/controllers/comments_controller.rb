@@ -3,11 +3,11 @@ class CommentsController < ApplicationController
 
   def create
   @comment = @commentable.comments.new(comment_params)
-  @post = @comment.post
     if @comment.save
-      redirect_to @commentable, notice: "Comment created."
+      redirect_to @commentable, notice: "Comment is awaiting moderation."
     else
-      render :new
+      instance_variable_set("@#{@resource.singularize}".to_sym, @commentable)
+      render template: "#{@resource}/show"
     end
   end
 
@@ -27,6 +27,5 @@ private
   def load_commentable
     @resource, id = request.path.split('/')[1,2]
     @commentable = @resource.singularize.classify.constantize.find(id)
-
   end
 end
