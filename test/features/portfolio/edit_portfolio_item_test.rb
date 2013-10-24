@@ -3,6 +3,7 @@ require "test_helper"
 feature "editing a project" do
   scenario "editing an existing project" do
     #Given a project
+    sign_in
 
     visit edit_project_path(projects(:one))
 
@@ -13,12 +14,15 @@ feature "editing a project" do
     #Then changes will be saved
     page.text.must_include "Project was successfully updated."
     page.text.must_include "My Portfolio"
-    page.text.wont_include "Code Fellows Portfolio"
+    page.text.wont_include "chickens"
   end
 
   scenario "incorrectly editing an existing project" do
     #Given an existing project
+    sign_in
+
     project = Project.create(name: "test", technologies_used: "Rails")
+
     visit edit_project_path(project)
 
     #When I submit invalid changes

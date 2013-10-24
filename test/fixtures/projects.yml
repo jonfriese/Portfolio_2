@@ -1,8 +1,12 @@
 one:
-  name: JonFriese
+  name: This is a project about chickens
   technologies_used: Rails
+  author: editor
+  published: true
 
 two:
   name: JoeBlow
   technologies_used: Ruby
+  author: author
+  published: true
 

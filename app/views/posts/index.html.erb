@@ -2,30 +2,38 @@
 
 <table>
   <tr>
-    <th>Title</th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
-<% @posts.each do |post| %>
-  <tr id="<%= dom_id(post) %>">
-    <th><%= post.title %></th>
-    <td><%= link_to 'View Post', post, class: "btn" %></td>
-    <% if policy(post).update? %>
-      <td>
-        <%= link_to 'Edit', edit_post_path(post), class: "btn" %>
-      </td>
-      <td>
-        <%= button_to 'Publish', post_path(post, post: { published: true }),
-          method: :put, class: "btn btn-default" %>
-      </td>
-    <% end %>
-    <% if policy(post).destroy? %>
-      <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-danger" %></td>
-    <% end %>
-  </tr>
-<% end %>
 </table>
+
+<% @posts.each do |post| %>
+  <div class="post" id="<%= dom_id(post) %>">
+
+    <h3><%= post.title %></h3>
+
+    <div class="nav">
+
+      <%= link_to 'View Post', post %>
+
+      <% if policy(post).update? %>
+
+      | <%= link_to 'Edit', edit_post_path(post) %> |
+
+      <%= link_to 'Publish', post_path(post, post: { published: true }),
+      method: :put %> |
+
+      <% end %>
+
+      <% if policy(post).destroy? %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+      <% end %>
+    </div>
+  </div>
+<% end %>
 
 <br />
 

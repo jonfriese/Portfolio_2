@@ -1,15 +1,42 @@
+<h1>Portfolio</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+</table>
+
 <% @projects.each do |project| %>
-  <div class="project" id="<%= dom_id(project) %>">
-    <h3><%= project.name %></h3>
-    <p><%= project.technologies_used %></p>
-    <div class="nav">
-      <%= link_to 'Show', project %> |
-      <%= link_to 'Edit', edit_project_path(project) %> |
-      <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
-    </div>
+<div class="project" id="<%= dom_id(project) %>">
+
+  <h3><%= project.name %></h3>
+
+  <div class="nav">
+
+    <%= link_to 'View Project', project %>
+
+    <% if policy(project).update? %>
+
+    | <%= link_to 'Edit', edit_project_path(project) %> |
+
+    <%= link_to 'Publish', project_path(project, project: { published: true }),
+    method: :put %> |
+
+    <% end %>
+
+    <% if policy(project).destroy? %>
+    <%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+    <% end %>
   </div>
+</div>
 <% end %>
 
 <br />
 
-<%= link_to 'New Project', new_project_path %>
+<% if policy(Project).create? %>
+<%= link_to 'New Project', new_project_path, class: "btn" %>
+<% end %>

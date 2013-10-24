@@ -1,8 +1,9 @@
 class ProjectsController < ApplicationController
   before_filter :set_project, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, except: [:index, :show]
 
   def index
-    @projects = Project.all
+    @projects = policy_scope(Project)
   end
 
   def new
@@ -11,11 +12,16 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(params[:project])
-    if @project.save
-      flash[:notice] = "Portfolio was successfully created"
-      redirect_to @project
-    else
-      render :new
+    authorize @project
+    respond_to do |format|
+      if @project.save
+        current_user.projects << @project
+        format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        format.json { render json: @project, status: :created, location: @projects }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
+      end
     end
   end
 
@@ -26,12 +32,12 @@ class ProjectsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @post }
+      format.json { render json: @project }
     end
   end
 
   def edit
-    @project = Project.find(params[:id])
+    authorize @project
   end
 
   def update
@@ -45,7 +51,7 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    @project = Project.find(params[:id])
+    authorize @project
     @project.destroy
 
     respond_to do |format|

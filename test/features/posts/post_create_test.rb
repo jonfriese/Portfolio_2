@@ -8,15 +8,15 @@ feature "creating a post" do
     # Given a completed post form
     visit posts_path
     click_on "New Post"
-    fill_in 'Title', with: ':cf'
-    fill_in 'Body', with: ':cf'
+    fill_in 'Title', with: 'Killer'
+    fill_in 'Body', with: 'This post is da best!'
 
     # When I submit the form
     click_on 'Create Post'
 
     #Then I shoud see the new post
-    page.text.must_include ':cf'
-    page.text.must_include ':cf'
+    page.text.must_include 'Killer'
+    page.text.must_include 'This post is da best!'
 
     # Add a success message
     page.text.must_include 'Post was successfully created.'
