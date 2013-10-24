@@ -26,7 +26,7 @@ class ProjectPolicy < ApplicationPolicy
     project.authored_by?(user) || user.editor? if user.present?
   end
 
-  class Scope < Struct.new(:user, :scope)
+  Scope = Struct.new(:user, :scope)
     def resolve
       if user.present? && user.editor?
         scope.all
