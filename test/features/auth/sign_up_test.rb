@@ -11,7 +11,7 @@ feature "user sign up authorization" do
     fill_in "Password", with: "test1234"
     fill_in "Password confirmation", with: "test1234"
 
-    click_on "Sign Up"
+    click_on "Sign up"
 
     page.text.must_include "Welcome!"
     page.text.wont_include "prohibited this user"
