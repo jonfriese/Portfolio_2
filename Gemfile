@@ -8,6 +8,7 @@ gem 'pry-rails'
 gem 'omniauth-twitter'
 gem 'figaro'
 gem 'faker'
+gem "therubyracer", :require => 'v8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

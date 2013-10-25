@@ -14,7 +14,7 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-24T10:06:20-07:00">2013-10-24T10:06:20-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-10-24T19:52:25-07:00">2013-10-24T19:52:25-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -253,7 +253,7 @@
       <tr>
         <td class="strong"><a href="#78446be87138e968b83c65f20a75f2a554378e40" class="src_link" title="config/initializers/devise.rb">config/initializers/devise.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>262</td>
+        <td>260</td>
         <td>13</td>
         <td>13</td>
         <td>0</td>
@@ -1899,13 +1899,13 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_accessible :approved, :author, :author_email, :author_url,</code>
+          <code class="ruby">  attr_accessible :approved, :author, :author_email, :author_url, :content, :referrer,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby">  :content, :referrer, :user_agent, :user_ip, :post_id, :commentable_id, :commentable_type</code>
+          <code class="ruby">                  :user_agent, :user_ip, :post_id, :commentable_id, :commentable_type</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
@@ -4185,1393 +4185,1393 @@
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # The secret key used by Devise. Devise uses this key to generate</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">  # The secret key used by Devise. Devise uses this key to generate</code>
+          <code class="ruby">  # random tokens. Changing this key will render invalid all existing</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  # random tokens. Changing this key will render invalid all existing</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
           <code class="ruby">  # confirmation, reset password and unlock tokens in the database.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  config.secret_key = ENV[&quot;DEVISE_SECRET_KEY&quot;]</code>
+          <code class="ruby">  config.secret_key = &#39;3cc0c0370b0cb5e2774c948934fe90e290c24a08dcff0012eceff6efb51753e25f38e6dea6c4a05e5d03eddc443807fab9d13b7137b625bb3d02c5e7f9402e20&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  # ==&gt; Mailer Configuration</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  # Configure the e-mail address which will be shown in Devise::Mailer,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">  # note that it will be overwritten if you use your own mailer class</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">  # with default &quot;from&quot; parameter.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">  config.mailer_sender = &#39;please-change-me-at-config-initializers-devise@example.com&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">  # Configure the class responsible to send e-mails.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  # config.mailer = &#39;Devise::Mailer&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  # ==&gt; ORM configuration</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  # Load and configure the ORM. Supports :active_record (default) and</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">  # :mongoid (bson_ext recommended) by default. Other ORMs may be</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  # available as additional gems.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">  require &#39;devise/orm/active_record&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">  # ==&gt; Configuration for any authentication mechanism</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="27">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">  # Configure which keys are used when authenticating a user. The default is</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">  # just :email. You can configure it to use [:username, :subdomain], so for</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">  # authenticating a user, both parameters are required. Remember that those</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">  # parameters are used only when authenticating and not when retrieving from</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">  # session. If you need permissions, you should implement that in a before filter.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">  # You can also supply a hash where the value is a boolean determining whether</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  # or not authentication should be aborted when the value is not present.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">  # config.authentication_keys = [ :email ]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby">  # Configure parameters from the request object used for authentication. Each entry</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">  # given should be a request method and it will automatically be passed to the</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">  # find_for_authentication method and considered in your model lookup. For instance,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">  # if you set :request_keys to [:subdomain], :subdomain will be used on authentication.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby">  # The same considerations mentioned for authentication_keys also apply to request_keys.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">  # config.request_keys = []</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">  # Configure which authentication keys should be case-insensitive.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">  # These keys will be downcased upon creating or modifying a user and when used</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">  # to authenticate or find a user. Default is :email.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">  config.case_insensitive_keys = [ :email ]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">  # Configure which authentication keys should have whitespace stripped.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">  # These keys will have whitespace before and after removed upon creating or</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">  # modifying a user and when used to authenticate or find a user. Default is :email.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
           <code class="ruby">  config.strip_whitespace_keys = [ :email ]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">  # Tell if authentication through request.params is enabled. True by default.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">  # It can be set to an array that will enable params authentication only for the</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">  # given strategies, for example, `config.params_authenticatable = [:database]` will</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby">  # enable it only for database (email + password) authentication.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">  # config.params_authenticatable = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">  # Tell if authentication through HTTP Auth is enabled. False by default.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">  # It can be set to an array that will enable http authentication only for the</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby">  # given strategies, for example, `config.http_authenticatable = [:token]` will</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">  # enable it only for token authentication. The supported strategies are:</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">  # :database      = Support basic authentication with authentication key + password</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
           <code class="ruby">  # :token         = Support basic authentication with token authentication key</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">  # :token_options = Support token authentication with options as defined in</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">  #                  http://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Token.html</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="65">
           
           
           <code class="ruby">  # config.http_authenticatable = false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="67">
           
           
           <code class="ruby">  # If http headers should be returned for AJAX requests. True by default.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">  # config.http_authenticatable_on_xhr = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
+        <li class="never" data-hits="" data-linenumber="70">
           
           
           <code class="ruby">  # The realm used in Http Basic Authentication. &#39;Application&#39; by default.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="71">
           
           
           <code class="ruby">  # config.http_authentication_realm = &#39;Application&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="74">
+        <li class="never" data-hits="" data-linenumber="72">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">  # It will change confirmation, password recovery and other workflows</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">  # to behave the same regardless if the e-mail provided was right or wrong.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby">  # Does not affect registerable.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby">  # config.paranoid = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="79">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
           <code class="ruby">  # By default Devise will store the user in session. You can skip storage for</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
           <code class="ruby">  # :http_auth and :token_auth by adding those symbols to the array below.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="82">
+        <li class="never" data-hits="" data-linenumber="80">
           
           
           <code class="ruby">  # Notice that if you are skipping storage for all authentication paths, you</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">  # may want to disable generating routes to Devise&#39;s sessions controller by</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="84">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">  # passing :skip =&gt; :sessions to `devise_for` in your config/routes.rb</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="85">
+        <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
           <code class="ruby">  config.skip_session_storage = [:http_auth]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="85">
           
           
           <code class="ruby">  # By default, Devise cleans up the CSRF token on authentication to</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="86">
           
           
           <code class="ruby">  # avoid CSRF token fixation attacks. This means that, when using AJAX</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="89">
+        <li class="never" data-hits="" data-linenumber="87">
           
           
           <code class="ruby">  # requests for sign in and sign up, you need to get a new CSRF token</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="90">
+        <li class="never" data-hits="" data-linenumber="88">
           
           
           <code class="ruby">  # from the server. You can disable this option at your own risk.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="91">
+        <li class="never" data-hits="" data-linenumber="89">
           
           
           <code class="ruby">  # config.clean_up_csrf_token_on_authentication = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="90">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="93">
+        <li class="never" data-hits="" data-linenumber="91">
           
           
           <code class="ruby">  # ==&gt; Configuration for :database_authenticatable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="94">
+        <li class="never" data-hits="" data-linenumber="92">
           
           
           <code class="ruby">  # For bcrypt, this is the cost for hashing the password and defaults to 10. If</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="95">
+        <li class="never" data-hits="" data-linenumber="93">
           
           
           <code class="ruby">  # using other encryptors, it sets how many times you want the password re-encrypted.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="96">
+        <li class="never" data-hits="" data-linenumber="94">
           
           
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="97">
+        <li class="never" data-hits="" data-linenumber="95">
           
           
           <code class="ruby">  # Limiting the stretches to just one in testing will increase the performance of</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="98">
+        <li class="never" data-hits="" data-linenumber="96">
           
           
           <code class="ruby">  # your test suite dramatically. However, it is STRONGLY RECOMMENDED to not use</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="99">
+        <li class="never" data-hits="" data-linenumber="97">
           
           
           <code class="ruby">  # a value less than 10 in other environments.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="100">
+        <li class="covered" data-hits="1" data-linenumber="98">
           <span class="hits">1</span>
           
           <code class="ruby">  config.stretches = Rails.env.test? ? 1 : 10</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="101">
+        <li class="never" data-hits="" data-linenumber="99">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="102">
+        <li class="never" data-hits="" data-linenumber="100">
           
           
           <code class="ruby">  # Setup a pepper to generate the encrypted password.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="103">
+        <li class="never" data-hits="" data-linenumber="101">
           
           
           <code class="ruby">  # config.pepper = &#39;27ff90e0480bd558bc203b7b0a9dbd7a2f5947bae988141f38e5f904e36ca1fb475fa59753b063d92cfd57de08626c1bac302ff4b39277b240b24180f599adf4&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="104">
+        <li class="never" data-hits="" data-linenumber="102">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="105">
+        <li class="never" data-hits="" data-linenumber="103">
           
           
           <code class="ruby">  # ==&gt; Configuration for :confirmable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="106">
+        <li class="never" data-hits="" data-linenumber="104">
           
           
           <code class="ruby">  # A period that the user is allowed to access the website even without</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="107">
+        <li class="never" data-hits="" data-linenumber="105">
           
           
           <code class="ruby">  # confirming his account. For instance, if set to 2.days, the user will be</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="108">
+        <li class="never" data-hits="" data-linenumber="106">
           
           
           <code class="ruby">  # able to access the website for two days without confirming his account,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="109">
+        <li class="never" data-hits="" data-linenumber="107">
           
           
           <code class="ruby">  # access will be blocked just in the third day. Default is 0.days, meaning</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="110">
+        <li class="never" data-hits="" data-linenumber="108">
           
           
           <code class="ruby">  # the user cannot access the website without confirming his account.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="111">
+        <li class="never" data-hits="" data-linenumber="109">
           
           
           <code class="ruby">  # config.allow_unconfirmed_access_for = 2.days</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="112">
+        <li class="never" data-hits="" data-linenumber="110">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="113">
+        <li class="never" data-hits="" data-linenumber="111">
           
           
           <code class="ruby">  # A period that the user is allowed to confirm their account before their</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="114">
+        <li class="never" data-hits="" data-linenumber="112">
           
           
           <code class="ruby">  # token becomes invalid. For example, if set to 3.days, the user can confirm</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="115">
+        <li class="never" data-hits="" data-linenumber="113">
           
           
           <code class="ruby">  # their account within 3 days after the mail was sent, but on the fourth day</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="116">
+        <li class="never" data-hits="" data-linenumber="114">
           
           
           <code class="ruby">  # their account can&#39;t be confirmed with the token any more.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="117">
+        <li class="never" data-hits="" data-linenumber="115">
           
           
           <code class="ruby">  # Default is nil, meaning there is no restriction on how long a user can take</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="118">
+        <li class="never" data-hits="" data-linenumber="116">
           
           
           <code class="ruby">  # before confirming their account.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="119">
+        <li class="never" data-hits="" data-linenumber="117">
           
           
           <code class="ruby">  # config.confirm_within = 3.days</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="120">
+        <li class="never" data-hits="" data-linenumber="118">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="121">
+        <li class="never" data-hits="" data-linenumber="119">
           
           
           <code class="ruby">  # If true, requires any email changes to be confirmed (exactly the same way as</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="122">
+        <li class="never" data-hits="" data-linenumber="120">
           
           
           <code class="ruby">  # initial account confirmation) to be applied. Requires additional unconfirmed_email</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="123">
+        <li class="never" data-hits="" data-linenumber="121">
           
           
           <code class="ruby">  # db field (see migrations). Until confirmed new email is stored in</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="124">
+        <li class="never" data-hits="" data-linenumber="122">
           
           
           <code class="ruby">  # unconfirmed email column, and copied to email column on successful confirmation.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="125">
+        <li class="covered" data-hits="1" data-linenumber="123">
           <span class="hits">1</span>
           
           <code class="ruby">  config.reconfirmable = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="126">
+        <li class="never" data-hits="" data-linenumber="124">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="127">
+        <li class="never" data-hits="" data-linenumber="125">
           
           
           <code class="ruby">  # Defines which key will be used when confirming an account</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="128">
+        <li class="never" data-hits="" data-linenumber="126">
           
           
           <code class="ruby">  # config.confirmation_keys = [ :email ]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="129">
+        <li class="never" data-hits="" data-linenumber="127">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="130">
+        <li class="never" data-hits="" data-linenumber="128">
           
           
           <code class="ruby">  # ==&gt; Configuration for :rememberable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="131">
+        <li class="never" data-hits="" data-linenumber="129">
           
           
           <code class="ruby">  # The time the user will be remembered without asking for credentials again.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="132">
+        <li class="never" data-hits="" data-linenumber="130">
           
           
           <code class="ruby">  # config.remember_for = 2.weeks</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="133">
+        <li class="never" data-hits="" data-linenumber="131">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="134">
+        <li class="never" data-hits="" data-linenumber="132">
           
           
           <code class="ruby">  # If true, extends the user&#39;s remember period when remembered via cookie.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="135">
+        <li class="never" data-hits="" data-linenumber="133">
           
           
           <code class="ruby">  # config.extend_remember_period = false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="136">
+        <li class="never" data-hits="" data-linenumber="134">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="137">
+        <li class="never" data-hits="" data-linenumber="135">
           
           
           <code class="ruby">  # Options to be passed to the created cookie. For instance, you can set</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="138">
+        <li class="never" data-hits="" data-linenumber="136">
           
           
           <code class="ruby">  # :secure =&gt; true in order to force SSL only cookies.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="139">
+        <li class="never" data-hits="" data-linenumber="137">
           
           
           <code class="ruby">  # config.rememberable_options = {}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="140">
+        <li class="never" data-hits="" data-linenumber="138">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="141">
+        <li class="never" data-hits="" data-linenumber="139">
           
           
           <code class="ruby">  # ==&gt; Configuration for :validatable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="142">
+        <li class="never" data-hits="" data-linenumber="140">
           
           
           <code class="ruby">  # Range for password length. Default is 8..128.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="143">
+        <li class="covered" data-hits="1" data-linenumber="141">
           <span class="hits">1</span>
           
           <code class="ruby">  config.password_length = 8..128</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="144">
+        <li class="never" data-hits="" data-linenumber="142">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="145">
+        <li class="never" data-hits="" data-linenumber="143">
           
           
           <code class="ruby">  # Email regex used to validate email formats. It simply asserts that</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="146">
+        <li class="never" data-hits="" data-linenumber="144">
           
           
           <code class="ruby">  # one (and only one) @ exists in the given string. This is mainly</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="147">
+        <li class="never" data-hits="" data-linenumber="145">
           
           
           <code class="ruby">  # to give user feedback and not to assert the e-mail validity.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="148">
+        <li class="never" data-hits="" data-linenumber="146">
           
           
           <code class="ruby">  # config.email_regexp = /\A[^@]+@[^@]+\z/</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="149">
+        <li class="never" data-hits="" data-linenumber="147">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="150">
+        <li class="never" data-hits="" data-linenumber="148">
           
           
           <code class="ruby">  # ==&gt; Configuration for :timeoutable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="151">
+        <li class="never" data-hits="" data-linenumber="149">
           
           
           <code class="ruby">  # The time you want to timeout the user session without activity. After this</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="152">
+        <li class="never" data-hits="" data-linenumber="150">
           
           
           <code class="ruby">  # time the user will be asked for credentials again. Default is 30 minutes.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="153">
+        <li class="never" data-hits="" data-linenumber="151">
           
           
           <code class="ruby">  # config.timeout_in = 30.minutes</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="154">
+        <li class="never" data-hits="" data-linenumber="152">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="155">
+        <li class="never" data-hits="" data-linenumber="153">
           
           
           <code class="ruby">  # If true, expires auth token on session timeout.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="156">
+        <li class="never" data-hits="" data-linenumber="154">
           
           
           <code class="ruby">  # config.expire_auth_token_on_timeout = false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="157">
+        <li class="never" data-hits="" data-linenumber="155">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="158">
+        <li class="never" data-hits="" data-linenumber="156">
           
           
           <code class="ruby">  # ==&gt; Configuration for :lockable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="159">
+        <li class="never" data-hits="" data-linenumber="157">
           
           
           <code class="ruby">  # Defines which strategy will be used to lock an account.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="160">
+        <li class="never" data-hits="" data-linenumber="158">
           
           
           <code class="ruby">  # :failed_attempts = Locks an account after a number of failed attempts to sign in.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="161">
+        <li class="never" data-hits="" data-linenumber="159">
           
           
           <code class="ruby">  # :none            = No lock strategy. You should handle locking by yourself.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="162">
+        <li class="never" data-hits="" data-linenumber="160">
           
           
           <code class="ruby">  # config.lock_strategy = :failed_attempts</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="163">
+        <li class="never" data-hits="" data-linenumber="161">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="164">
+        <li class="never" data-hits="" data-linenumber="162">
           
           
           <code class="ruby">  # Defines which key will be used when locking and unlocking an account</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="165">
+        <li class="never" data-hits="" data-linenumber="163">
           
           
           <code class="ruby">  # config.unlock_keys = [ :email ]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="166">
+        <li class="never" data-hits="" data-linenumber="164">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="167">
+        <li class="never" data-hits="" data-linenumber="165">
           
           
           <code class="ruby">  # Defines which strategy will be used to unlock an account.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="168">
+        <li class="never" data-hits="" data-linenumber="166">
           
           
           <code class="ruby">  # :email = Sends an unlock link to the user email</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="169">
+        <li class="never" data-hits="" data-linenumber="167">
           
           
           <code class="ruby">  # :time  = Re-enables login after a certain amount of time (see :unlock_in below)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="170">
+        <li class="never" data-hits="" data-linenumber="168">
           
           
           <code class="ruby">  # :both  = Enables both strategies</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="171">
+        <li class="never" data-hits="" data-linenumber="169">
           
           
           <code class="ruby">  # :none  = No unlock strategy. You should handle unlocking by yourself.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="172">
+        <li class="never" data-hits="" data-linenumber="170">
           
           
           <code class="ruby">  # config.unlock_strategy = :both</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="173">
+        <li class="never" data-hits="" data-linenumber="171">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="174">
+        <li class="never" data-hits="" data-linenumber="172">
           
           
           <code class="ruby">  # Number of authentication tries before locking an account if lock_strategy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="175">
+        <li class="never" data-hits="" data-linenumber="173">
           
           
           <code class="ruby">  # is failed attempts.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="176">
+        <li class="never" data-hits="" data-linenumber="174">
           
           
           <code class="ruby">  # config.maximum_attempts = 20</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="177">
+        <li class="never" data-hits="" data-linenumber="175">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="178">
+        <li class="never" data-hits="" data-linenumber="176">
           
           
           <code class="ruby">  # Time interval to unlock the account if :time is enabled as unlock_strategy.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="179">
+        <li class="never" data-hits="" data-linenumber="177">
           
           
           <code class="ruby">  # config.unlock_in = 1.hour</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="180">
+        <li class="never" data-hits="" data-linenumber="178">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="181">
+        <li class="never" data-hits="" data-linenumber="179">
           
           
           <code class="ruby">  # ==&gt; Configuration for :recoverable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="182">
+        <li class="never" data-hits="" data-linenumber="180">
           
           
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="183">
+        <li class="never" data-hits="" data-linenumber="181">
           
           
           <code class="ruby">  # Defines which key will be used when recovering the password for an account</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="184">
+        <li class="never" data-hits="" data-linenumber="182">
           
           
           <code class="ruby">  # config.reset_password_keys = [ :email ]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="185">
+        <li class="never" data-hits="" data-linenumber="183">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="186">
+        <li class="never" data-hits="" data-linenumber="184">
           
           
           <code class="ruby">  # Time interval you can reset your password with a reset password key.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="187">
+        <li class="never" data-hits="" data-linenumber="185">
           
           
           <code class="ruby">  # Don&#39;t put a too small interval or your users won&#39;t have the time to</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="188">
+        <li class="never" data-hits="" data-linenumber="186">
           
           
           <code class="ruby">  # change their passwords.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="189">
+        <li class="covered" data-hits="1" data-linenumber="187">
           <span class="hits">1</span>
           
           <code class="ruby">  config.reset_password_within = 6.hours</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="190">
+        <li class="never" data-hits="" data-linenumber="188">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="191">
+        <li class="never" data-hits="" data-linenumber="189">
           
           
           <code class="ruby">  # ==&gt; Configuration for :encryptable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="192">
+        <li class="never" data-hits="" data-linenumber="190">
           
           
           <code class="ruby">  # Allow you to use another encryption algorithm besides bcrypt (default). You can use</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="193">
+        <li class="never" data-hits="" data-linenumber="191">
           
           
           <code class="ruby">  # :sha1, :sha512 or encryptors from others authentication tools as :clearance_sha1,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="194">
+        <li class="never" data-hits="" data-linenumber="192">
           
           
           <code class="ruby">  # :authlogic_sha512 (then you should set stretches above to 20 for default behavior)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="195">
+        <li class="never" data-hits="" data-linenumber="193">
           
           
           <code class="ruby">  # and :restful_authentication_sha1 (then you should set stretches to 10, and copy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="196">
+        <li class="never" data-hits="" data-linenumber="194">
           
           
           <code class="ruby">  # REST_AUTH_SITE_KEY to pepper).</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="197">
+        <li class="never" data-hits="" data-linenumber="195">
           
           
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="198">
+        <li class="never" data-hits="" data-linenumber="196">
           
           
           <code class="ruby">  # Require the `devise-encryptable` gem when using anything other than bcrypt</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="199">
+        <li class="never" data-hits="" data-linenumber="197">
           
           
           <code class="ruby">  # config.encryptor = :sha512</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="200">
+        <li class="never" data-hits="" data-linenumber="198">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="201">
+        <li class="never" data-hits="" data-linenumber="199">
           
           
           <code class="ruby">  # ==&gt; Configuration for :token_authenticatable</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="202">
+        <li class="never" data-hits="" data-linenumber="200">
           
           
           <code class="ruby">  # Defines name of the authentication token params key</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="203">
+        <li class="never" data-hits="" data-linenumber="201">
           
           
           <code class="ruby">  # config.token_authentication_key = :auth_token</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="204">
+        <li class="never" data-hits="" data-linenumber="202">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="205">
+        <li class="never" data-hits="" data-linenumber="203">
           
           
           <code class="ruby">  # ==&gt; Scopes configuration</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="206">
+        <li class="never" data-hits="" data-linenumber="204">
           
           
           <code class="ruby">  # Turn scoped views on. Before rendering &quot;sessions/new&quot;, it will first check for</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="207">
+        <li class="never" data-hits="" data-linenumber="205">
           
           
           <code class="ruby">  # &quot;users/sessions/new&quot;. It&#39;s turned off by default because it&#39;s slower if you</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="208">
+        <li class="never" data-hits="" data-linenumber="206">
           
           
           <code class="ruby">  # are using only default views.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="209">
+        <li class="never" data-hits="" data-linenumber="207">
           
           
           <code class="ruby">  # config.scoped_views = false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="210">
+        <li class="never" data-hits="" data-linenumber="208">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="211">
+        <li class="never" data-hits="" data-linenumber="209">
           
           
           <code class="ruby">  # Configure the default scope given to Warden. By default it&#39;s the first</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="212">
+        <li class="never" data-hits="" data-linenumber="210">
           
           
           <code class="ruby">  # devise role declared in your routes (usually :user).</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="213">
+        <li class="never" data-hits="" data-linenumber="211">
           
           
           <code class="ruby">  # config.default_scope = :user</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="214">
+        <li class="never" data-hits="" data-linenumber="212">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="215">
+        <li class="never" data-hits="" data-linenumber="213">
           
           
           <code class="ruby">  # Set this configuration to false if you want /users/sign_out to sign out</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="216">
+        <li class="never" data-hits="" data-linenumber="214">
           
           
           <code class="ruby">  # only the current scope. By default, Devise signs out all scopes.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="217">
+        <li class="never" data-hits="" data-linenumber="215">
           
           
           <code class="ruby">  # config.sign_out_all_scopes = true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="218">
+        <li class="never" data-hits="" data-linenumber="216">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="219">
+        <li class="never" data-hits="" data-linenumber="217">
           
           
           <code class="ruby">  # ==&gt; Navigation configuration</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="220">
+        <li class="never" data-hits="" data-linenumber="218">
           
           
           <code class="ruby">  # Lists the formats that should be treated as navigational. Formats like</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="221">
+        <li class="never" data-hits="" data-linenumber="219">
           
           
           <code class="ruby">  # :html, should redirect to the sign in page when the user does not have</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="222">
+        <li class="never" data-hits="" data-linenumber="220">
           
           
           <code class="ruby">  # access, but formats like :xml or :json, should return 401.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="223">
+        <li class="never" data-hits="" data-linenumber="221">
           
           
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="224">
+        <li class="never" data-hits="" data-linenumber="222">
           
           
           <code class="ruby">  # If you have any extra navigational formats, like :iphone or :mobile, you</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="225">
+        <li class="never" data-hits="" data-linenumber="223">
           
           
           <code class="ruby">  # should add them to the navigational formats lists.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="226">
+        <li class="never" data-hits="" data-linenumber="224">
           
           
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="227">
+        <li class="never" data-hits="" data-linenumber="225">
           
           
           <code class="ruby">  # The &quot;*/*&quot; below is required to match Internet Explorer requests.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="228">
+        <li class="never" data-hits="" data-linenumber="226">
           
           
           <code class="ruby">  # config.navigational_formats = [&#39;*/*&#39;, :html]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="229">
+        <li class="never" data-hits="" data-linenumber="227">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="230">
+        <li class="never" data-hits="" data-linenumber="228">
           
           
           <code class="ruby">  # The default HTTP method used to sign out a resource. Default is :delete.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="231">
+        <li class="covered" data-hits="1" data-linenumber="229">
           <span class="hits">1</span>
           
           <code class="ruby">  config.sign_out_via = :delete</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="232">
+        <li class="never" data-hits="" data-linenumber="230">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="233">
+        <li class="never" data-hits="" data-linenumber="231">
           
           
           <code class="ruby">  # ==&gt; OmniAuth</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="234">
+        <li class="never" data-hits="" data-linenumber="232">
           
           
           <code class="ruby">  # Add a new OmniAuth provider. Check the wiki for more information on setting</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="235">
+        <li class="never" data-hits="" data-linenumber="233">
           
           
           <code class="ruby">  # up on your models and hooks.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="236">
+        <li class="never" data-hits="" data-linenumber="234">
           
           
           <code class="ruby">  # config.omniauth :github, &#39;APP_ID&#39;, &#39;APP_SECRET&#39;, :scope =&gt; &#39;user,public_repo&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="235">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="236">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  config.omniauth :twitter, ENV[&quot;TWITTER_CONSUMER_KEY&quot;], ENV[&quot;TWITTER_CONSUMER_SECRET&quot;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="237">
@@ -5580,94 +5580,94 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="238">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  config.omniauth :twitter, ENV[&quot;TWITTER_CONSUMER_KEY&quot;], ENV[&quot;TWITTER_CONSUMER_SECRET&quot;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="239">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="240">
+        <li class="never" data-hits="" data-linenumber="238">
           
           
           <code class="ruby">  # ==&gt; Warden configuration</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="241">
+        <li class="never" data-hits="" data-linenumber="239">
           
           
           <code class="ruby">  # If you want to use other strategies, that are not supported by Devise, or</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="242">
+        <li class="never" data-hits="" data-linenumber="240">
           
           
           <code class="ruby">  # change the failure app, you can configure them inside the config.warden block.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="243">
+        <li class="never" data-hits="" data-linenumber="241">
           
           
           <code class="ruby">  #</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="244">
+        <li class="never" data-hits="" data-linenumber="242">
           
           
           <code class="ruby">  # config.warden do |manager|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="245">
+        <li class="never" data-hits="" data-linenumber="243">
           
           
           <code class="ruby">  #   manager.intercept_401 = false</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="246">
+        <li class="never" data-hits="" data-linenumber="244">
           
           
           <code class="ruby">  #   manager.default_strategies(:scope =&gt; :user).unshift :some_external_strategy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="247">
+        <li class="never" data-hits="" data-linenumber="245">
           
           
           <code class="ruby">  # end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="248">
+        <li class="never" data-hits="" data-linenumber="246">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="249">
+        <li class="never" data-hits="" data-linenumber="247">
           
           
           <code class="ruby">  # ==&gt; Mountable engine configurations</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="250">
+        <li class="never" data-hits="" data-linenumber="248">
           
           
           <code class="ruby">  # When using Devise inside an engine, let&#39;s call it `MyEngine`, and this engine</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="251">
+        <li class="never" data-hits="" data-linenumber="249">
           
           
           <code class="ruby">  # is mountable, there are some extra configurations to be taken into account.</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="252">
+        <li class="never" data-hits="" data-linenumber="250">
           
           
           <code class="ruby">  # The following options are available, assuming the engine is mounted as:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="251">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="252">
+          
+          
+          <code class="ruby">  #     mount MyEngine, at: &#39;/my_engine&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="253">
@@ -5679,52 +5679,40 @@
         <li class="never" data-hits="" data-linenumber="254">
           
           
-          <code class="ruby">  #     mount MyEngine, at: &#39;/my_engine&#39;</code>
+          <code class="ruby">  # The router that invoked `devise_for`, in the example above, would be:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="255">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # config.router_name = :my_engine</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="256">
           
           
-          <code class="ruby">  # The router that invoked `devise_for`, in the example above, would be:</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="257">
           
           
-          <code class="ruby">  # config.router_name = :my_engine</code>
+          <code class="ruby">  # When using omniauth, Devise cannot automatically set Omniauth path,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="258">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # so you need to do it manually. For the users scope, it would be:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="259">
           
           
-          <code class="ruby">  # When using omniauth, Devise cannot automatically set Omniauth path,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="260">
-          
-          
-          <code class="ruby">  # so you need to do it manually. For the users scope, it would be:</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="261">
-          
-          
           <code class="ruby">  # config.omniauth_path_prefix = &#39;/my_engine/users/auth&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="262">
+        <li class="never" data-hits="" data-linenumber="260">
           
           
           <code class="ruby">end</code>
@@ -5943,7 +5931,7 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">Portfolio::Application.config.secret_token = ENV[&quot;RAILS_KEY&quot;]</code>
+          <code class="ruby">Portfolio::Application.config.secret_token = &#39;661d1ec03f0698a58dfd3e675eed9d6f2bad6f0fdbe5e7e4ce14ddafe9607ecf3b30a74cfef118679616c5e993e42616bc035be79d7d58f1260083d7c8710e1c&#39;</code>
         </li>
       
     </ol>
