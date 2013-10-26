@@ -6,11 +6,6 @@ class Project < ActiveRecord::Base
   validates :technologies_used, presence: true
   scope :published, where(published: true)
 
-  def publish!
-    self.published = true
-    save!
-  end
-
   def authored_by?(user)
     author == user
   end

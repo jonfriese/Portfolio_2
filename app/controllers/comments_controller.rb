@@ -1,8 +1,8 @@
 class CommentsController < ApplicationController
-  before_filter :load_commentable, :comment
-
+  before_filter :load_commentable
 
   def create
+    @comment = @commentable.comments.new(params[:comment])
     if @comment.save
       redirect_to @commentable, notice: "Comment is awaiting moderation."
     else
@@ -12,13 +12,16 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment = @commentable.comments.find(params[:id])
     authorize @comment
     @comment.destroy
-    redirect_to @commentable
+    redirect_to @commentable, notice: 'Post has been destroyed.'
   end
 
   def update
+    @comment = @commentable.comments.find(params[:id])
     authorize @comment
+
     respond_to do |format|
       if @comment.update_attributes(params[:comment])
         format.html { redirect_to @commentable, notice: 'Post has been approved.' }
@@ -36,9 +39,5 @@ private
   def load_commentable
     @resource, id = request.path.split('/')[1,2]
     @commentable = @resource.singularize.classify.constantize.find(id)
-  end
-
-  def comment
-    @comment = @commentable.comments.new(params[:comment])
   end
 end

@@ -6,13 +6,4 @@ class Comment < ActiveRecord::Base
 
   belongs_to :commentable, polymorphic: true
   scope :approved, where(approved: true)
-
-  def approved!
-    self.approved = true
-    save!
-  end
-
-  def authored_by?(user)
-    author == user
-  end
 end

@@ -1,14 +1,14 @@
-commentor:
+comment:
   author: editor
-  author: http://editor@example.com
+  author_url: http://editor@example.com
   author_email: editor@example.com
   content: I'm da editor!!
   commentable: published
   commentable_type: post
 
-commentor2:
+comment2:
   author: author
-  author: http://author@example.com
+  author_url: http://author@example.com
   author_email: author@example.com
   content: I'm an author!!
   commentable: published
