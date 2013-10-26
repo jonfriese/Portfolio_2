@@ -19,17 +19,16 @@
       <%= link_to 'View Post', post %>
 
       <% if policy(post).update? %>
-
       | <%= link_to 'Edit', edit_post_path(post) %> |
+      <% end %>
 
+      <% if policy(post).publish? && post.published? == false %>
       <%= link_to 'Publish', post_path(post, post: { published: true }),
       method: :put %> |
-
       <% end %>
 
       <% if policy(post).destroy? %>
       <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-
       <% end %>
     </div>
   </div>

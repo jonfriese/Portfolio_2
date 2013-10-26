@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   def show
     @commentable = @post
     @comments = @commentable.comments
+    @comments = policy_scope(Comment)
     @comment = Comment.new
 
     respond_to do |format|

@@ -14,15 +14,15 @@ class PostPolicy < ApplicationPolicy
     post.authored_by?(user) || user.editor? if user.present?
   end
 
-  def update?
-    post.authored_by?(user) || user.editor? if user.present?
-  end
-
   def publish?
     user.editor? if user.present?
   end
 
   def edit?
+    post.authored_by?(user) || user.editor? if user.present?
+  end
+
+  def update?
     post.authored_by?(user) || user.editor? if user.present?
   end
 
