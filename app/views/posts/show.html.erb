@@ -27,16 +27,17 @@
 
 
 <% @comments.each do |comment| %>
-  <div class="comment" id="<%= dom_id(comment) %>">
+  <tr id="<%= dom_id(comment) %>">
+
     <h3><%= comment.content %></h3>
 
     <div class="nav">
       <% if policy(comment).approve? && comment.approved? == false %>
-      <%= link_to 'Approve', post_comment_path(@commentable, comment, comment: { approved: true }), method: :put %> |
+        <%= link_to 'Approve', post_comment_path(@commentable, comment, comment: { approved: true }), method: :put %> |
       <% end %>
 
       <% if policy(comment).destroy? %>
-      <%= link_to 'Destroy', post_comment_path(@commentable, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Destroy', post_comment_path(@commentable, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
       <% end %>
     </div>
   </div>

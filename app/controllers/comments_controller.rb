@@ -15,7 +15,7 @@ class CommentsController < ApplicationController
     @comment = @commentable.comments.find(params[:id])
     authorize @comment
     @comment.destroy
-    redirect_to @commentable, notice: 'Post has been destroyed.'
+    redirect_to @commentable, notice: 'Comment has been destroyed.'
   end
 
   def update
@@ -24,7 +24,7 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.update_attributes(params[:comment])
-        format.html { redirect_to @commentable, notice: 'Post has been approved.' }
+        format.html { redirect_to @commentable, notice: 'Comment has been approved.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
