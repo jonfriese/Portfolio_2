@@ -1,14 +1,14 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/home/jon/rails/Portfolio/config/environment.rb": [
+      "/home/jon/rails/portfolio/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/jon/rails/Portfolio/config/application.rb": [
+      "/home/jon/rails/portfolio/config/application.rb": [
         1,
         null,
         null,
@@ -86,7 +86,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/config/boot.rb": [
+      "/home/jon/rails/portfolio/config/boot.rb": [
         1,
         null,
         null,
@@ -94,7 +94,7 @@
         null,
         1
       ],
-      "/home/jon/rails/Portfolio/config/environments/test.rb": [
+      "/home/jon/rails/portfolio/config/environments/test.rb": [
         1,
         null,
         null,
@@ -133,7 +133,7 @@
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/config/initializers/backtrace_silencers.rb": [
+      "/home/jon/rails/portfolio/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -142,7 +142,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/config/initializers/devise.rb": [
+      "/home/jon/rails/portfolio/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -388,23 +388,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/jon/rails/Portfolio/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -421,14 +404,31 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/config/initializers/mime_types.rb": [
+      "/home/jon/rails/portfolio/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/config/initializers/secret_token.rb": [
+      "/home/jon/rails/portfolio/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/jon/rails/portfolio/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -437,7 +437,7 @@
         null,
         1
       ],
-      "/home/jon/rails/Portfolio/config/initializers/session_store.rb": [
+      "/home/jon/rails/portfolio/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -447,7 +447,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/config/initializers/wrap_parameters.rb": [
+      "/home/jon/rails/portfolio/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -463,7 +463,7 @@
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/config/routes.rb": [
+      "/home/jon/rails/portfolio/config/routes.rb": [
         1,
         null,
         null,
@@ -537,7 +537,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/models/user.rb": [
+      "/home/jon/rails/portfolio/app/models/user.rb": [
         1,
         null,
         null,
@@ -591,13 +591,13 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/controllers/application_controller.rb": [
+      "/home/jon/rails/portfolio/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/app/helpers/application_helper.rb": [
+      "/home/jon/rails/portfolio/app/helpers/application_helper.rb": [
         1,
         null,
         null,
@@ -612,11 +612,11 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/helpers/home_helper.rb": [
+      "/home/jon/rails/portfolio/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/app/controllers/comments_controller.rb": [
+      "/home/jon/rails/portfolio/app/controllers/comments_controller.rb": [
         1,
         1,
         null,
@@ -661,7 +661,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/models/comment.rb": [
+      "/home/jon/rails/portfolio/app/models/comment.rb": [
         1,
         1,
         null,
@@ -672,11 +672,11 @@
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/app/controllers/home_controller.rb": [
+      "/home/jon/rails/portfolio/app/controllers/home_controller.rb": [
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/app/controllers/omniauth_callbacks_controller.rb": [
+      "/home/jon/rails/portfolio/app/controllers/omniauth_callbacks_controller.rb": [
         1,
         1,
         1,
@@ -691,7 +691,7 @@
         1,
         null
       ],
-      "/home/jon/rails/Portfolio/app/controllers/posts_controller.rb": [
+      "/home/jon/rails/portfolio/app/controllers/posts_controller.rb": [
         1,
         1,
         1,
@@ -782,7 +782,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/models/post.rb": [
+      "/home/jon/rails/portfolio/app/models/post.rb": [
         1,
         1,
         1,
@@ -796,7 +796,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/controllers/projects_controller.rb": [
+      "/home/jon/rails/portfolio/app/controllers/projects_controller.rb": [
         1,
         1,
         1,
@@ -866,7 +866,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/models/project.rb": [
+      "/home/jon/rails/portfolio/app/models/project.rb": [
         1,
         1,
         1,
@@ -880,7 +880,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/policies/application_policy.rb": [
+      "/home/jon/rails/portfolio/app/policies/application_policy.rb": [
         1,
         1,
         null,
@@ -923,7 +923,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/policies/comment_policy.rb": [
+      "/home/jon/rails/portfolio/app/policies/comment_policy.rb": [
         1,
         1,
         null,
@@ -957,7 +957,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/policies/post_policy.rb": [
+      "/home/jon/rails/portfolio/app/policies/post_policy.rb": [
         1,
         1,
         null,
@@ -999,7 +999,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/app/policies/project_policy.rb": [
+      "/home/jon/rails/portfolio/app/policies/project_policy.rb": [
         1,
         1,
         null,
@@ -1041,7 +1041,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/auth/sign_out_test.rb": [
+      "/home/jon/rails/portfolio/test/features/auth/sign_out_test.rb": [
         1,
         null,
         1,
@@ -1061,7 +1061,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/auth/sign_up_test.rb": [
+      "/home/jon/rails/portfolio/test/features/auth/sign_up_test.rb": [
         1,
         null,
         1,
@@ -1082,7 +1082,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/comments/delete_comment_test.rb": [
+      "/home/jon/rails/portfolio/test/features/comments/delete_comment_test.rb": [
         1,
         null,
         1,
@@ -1105,7 +1105,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/comments/new_comment_post_test.rb": [
+      "/home/jon/rails/portfolio/test/features/comments/new_comment_post_test.rb": [
         1,
         null,
         1,
@@ -1124,7 +1124,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/html/check_for_bootstrap_test.rb": [
+      "/home/jon/rails/portfolio/test/features/html/check_for_bootstrap_test.rb": [
         1,
         null,
         1,
@@ -1134,7 +1134,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/html/welcome_page_test_test.rb": [
+      "/home/jon/rails/portfolio/test/features/html/welcome_page_test_test.rb": [
         1,
         null,
         1,
@@ -1144,7 +1144,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/portfolio/delete_item_test.rb": [
+      "/home/jon/rails/portfolio/test/features/portfolio/delete_item_test.rb": [
         1,
         null,
         1,
@@ -1168,175 +1168,6 @@
         1,
         null,
         1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/home/jon/rails/Portfolio/test/features/portfolio/edit_portfolio_item_test.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/jon/rails/Portfolio/test/features/portfolio/portfolio_create_test.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/jon/rails/Portfolio/test/features/portfolio/show_project_index_test.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/jon/rails/Portfolio/test/features/posts/post_create_test.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/home/jon/rails/Portfolio/test/features/posts/post_delete_test.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
         null,
         null,
         1,
@@ -1353,7 +1184,176 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/posts/post_edit_test.rb": [
+      "/home/jon/rails/portfolio/test/features/portfolio/edit_portfolio_item_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/jon/rails/portfolio/test/features/portfolio/portfolio_create_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/jon/rails/portfolio/test/features/portfolio/show_project_index_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/jon/rails/portfolio/test/features/posts/post_create_test.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/jon/rails/portfolio/test/features/posts/post_delete_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/jon/rails/portfolio/test/features/posts/post_edit_test.rb": [
         1,
         null,
         null,
@@ -1372,7 +1372,7 @@
         null,
         null
       ],
-      "/home/jon/rails/Portfolio/test/features/posts/visiting_the_post_index_test.rb": [
+      "/home/jon/rails/portfolio/test/features/posts/visiting_the_post_index_test.rb": [
         1,
         null,
         1,
@@ -1384,6 +1384,6 @@
         null
       ]
     },
-    "timestamp": 1382766084
+    "timestamp": 1382831781
   }
 }
