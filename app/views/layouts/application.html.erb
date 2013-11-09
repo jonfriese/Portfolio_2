@@ -3,149 +3,276 @@
   <head>
     <meta charset="utf-8">
     <title>Jon Friese</title>
-    <meta name="bootstrap" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <%= stylesheet_link_tag    "application", :media => "all" %>
+
+    <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+
+
   </head>
 
   <body>
-    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand nav-link" href="#top">Jon Friese</a>
-        </div> <!-- /.navbar-header -->
-
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to 'Blog', posts_path %></li>
-            <li><%= link_to 'Portfolio', projects_path %></li>
-            <li><a href= >Contact Me</a></li>
-            <% if current_user.present? %>
-              <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
-            <% else %>
-              <li><%= link_to 'Sign In', user_session_path %></li>
-              <li><%= link_to 'Sign Up', new_user_registration_path%></button></li>
-            <% end %>
-
-          </ul>
-        </div> <!-- /.navbar-collapse -->
-      </div> <!-- /.container -->
-    </nav> <!-- /.navbar -->
-
-    <div id="top" class="jumbotron">
-      <div class="container">
-
-      <%= yield %>
-
-        <% flash.each do |key, value| %>
-           <div class="<%= flash_class(key) %>">
-              <%= value %>
-           </div>
-        <% end %>
-
-      </div> <!-- /.container -->
-    </div> <!-- /.jumbotron -->
 
 
     <div class="container">
-      <h3 id="benefits" class="subhead">Why Use This Product</h3>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 benefit">
-          <div class="benefit-ball">
-            <span class="glyphicon glyphicon-home"></span>
-          </div>
-          <h3>Benefit Title</h3>
-          <p></p>
-        </div> <!-- /.benefit -->
 
-        <div class="col-md-4 col-sm-6 benefit">
-          <div class="benefit-ball">
-            <span class="glyphicon glyphicon-cloud"></span>
-          </div>
-          <h3>Benefit Title</h3>
-          <p></p>
-        </div> <!-- /.benefit -->
+			<div id="bl-main" class="bl-main">
 
-        <div class="col-md-4 col-sm-6 benefit">
-          <div class="benefit-ball">
-            <span class="glyphicon glyphicon-bell"></span>
-          </div>
-          <h3>Benefit Title</h3>
-          <p></p>
-        </div> <!-- /.benefit -->
+			<!--=========== ABOUT SECTION ===========-->
+				<section>
+					<div class="bl-box">
+						<h2 >Hi My Name is Jon</h2> <!-- class="bl-icon bl-icon-about" -->
+					</div><!-- /bl-box -->
+					<div class="bl-content">
+						<div class="row-fluid">
+							<div class="span12">
+								<h2>A Little About Me</h2>
+								<p>I am a Ruby on Rails developer living in Seattle. I started freelancing in 2009 and have worked for a wide range of personal clients and agencies.</p>
+								<p>I offer a complete web solution to my clients. I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.</p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<p></p>
+								<div class="row-fluid">
+									<div class="span8">
+									<h2>My Skills</h2>
+									    <!-- Progress Bar -->
+										<div class="progress">
+										<div class="bar" style="width: 73%;">HTML/CSS 73%</div>
+										</div>
+										<div class="progress">
+										<div class="bar" style="width: 100%;">Web Design 100%</div>
+										</div>
+										<div class="progress">
+										<div class="bar" style="width: 78%;">Photography 78%</div>
+										</div>
+										<div class="progress">
+										<div class="bar" style="width: 80%;">Sound Design 80%</div>
+										</div>
+										<div class="progress">
+										<div class="bar" style="width: 63%;">Party 63%</div>
+										</div>
+										<!-- Progress Bar End -->
+									</div><!-- /span6 -->
+									<div class="span4"></div>
+									<div class="span12">
+										<br>
+										<br>
+									</div>
+									<div class="span12">
+										<div class="row about-us">
+											<div class="span3">
+											<h3><i class="icon-user icon-white"></i> More About Me?</h3>
+											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+											</div>
+											<div class="span3">
+											<h3><i class="icon-heart icon-white"></i> What I Love</h3>
+											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+											</div>
+											<div class="span3">
+											<h3><i class="icon-fire icon-white"></i> Work Hard</h3>
+											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+											</div>
+											<div class="span3">
+											<h3><i class="icon-plane icon-white"></i> Ready To Go</h3>
+											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
+											</div>
+										</div><!-- /row-about-us -->
+									</div><!-- /span12 -->
+								</div><!-- /row -->
+							</div><!-- /span12 -->
+						</div><!-- /row-fluid -->
 
-        <div class="col-md-4 col-sm-6 benefit">
-          <div class="benefit-ball">
-            <span class="glyphicon glyphicon-bullhorn"></span>
-          </div>
-          <h3>Benefit Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-        </div> <!-- /.benefit -->
+					</div><!-- /bl-content -->
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
 
-        <div class="col-md-4 col-sm-6 benefit">
-          <div class="benefit-ball">
-            <span class="glyphicon glyphicon-cutlery"></span>
-          </div>
-          <h3>Benefit Title</h3>
-          <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-        </div> <!-- /.benefit -->
 
-        <div class="col-md-4 col-sm-6 benefit">
-          <div class="benefit-ball">
-            <span class="glyphicon glyphicon-fire"></span>
-          </div>
-          <h3>Benefit Title</h3>
-          <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero.</p>
-        </div> <!-- /.benefit -->
-      </div> <!-- /.row -->
 
-      <div class="sect-border"></div>
+			<!--=========== PORTFOLIO SECTION ===========-->
+				<section id="bl-work-section">
+					<div class="bl-box">
+						<h2 >Latests Works</h2> <!-- class="bl-icon bl-icon-works"-->
+					</div>
+					<div class="bl-content">
+						<h2>Some Recent Projects</h2>
+						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+						<p></p>
+						<p></p>
+						<div class="row-fluid">
+							<div class="span4">
+								<ul id="bl-work-items" style="list-style: none;">
+									<li data-panel="panel-1"><a href="#"><%= image_tag("project1.jpg") %></a></li>
+								</ul>
+								<p>Project Number 1</p>
+							</div><!-- /span4 -->
+							<div class="span4">
+								<ul id="bl-work-items">
+									<li data-panel="panel-2"><a href="#"><%= image_tag("project2.jpg") %></a></li>
+								</ul>
+								<p>Project Number 2</p>
+							</div><!-- /span4 -->
+							<div class="span4">
+								<ul id="bl-work-items">
+									<li data-panel="panel-3"><a href="#"><%= image_tag("project3.jpg") %></a></li>
+								</ul>
+								<p>Project Number 3</p>
+							</div><!-- /span4 -->
 
-      <h3 id="tour" class="subhead">Take A Tour Of This Product</h3>
-      <div class="row">
-        <div class="col-md-12">
-        </div> <!-- /.col-md-12 -->
-      </div> <!-- /.row -->
+						</div><!-- /row-fluid -->
+					</div><!-- /bl-content -->
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
 
-      <div class="sect-border"></div>
 
-      <h3 id="about" class="subhead">A Little More About Us</h3>
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1 text-center">
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.</p>
-          <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
-        </div> <!-- /.col-md-10 -->
-      </div> <!-- /.row -->
 
-    </div> <!-- /.container -->
+			<!--=========== BLOG SECTION ===========-->
+				<section>
+					<div class="bl-box">
+						<h2>My deepest thoughts</h2>
+					</div>
+					<div class="bl-content">
+						<div class="row-fluid">
+							<div class="span12">
+								<h2>Latest Blog Entry</h2>
+								<article>
+									<h3>Expanding Your Horizons</h3>
+									<%= image_tag("blogentry.jpg") %>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<a href="#">Read more</a></p>
+								</article>
+								<hr>
+								<h2>Other Entries</h2>
+								<article>
+									<h3>Blog Post 1</h3>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
+								</article>
+								<article>
+									<h3>Blog Post 2</h3>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
+								</article>
+								<article>
+									<h3>Blog Post 3</h3>
+									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
+								</article>
 
-    <footer>
-      <div class="container clearfix">
-        <p class="pull-left">
-          Copyright &copy; Acme Corp 2013
-        </p>
-        <p class="pull-right">
-          a template from <a href="http://coverstrap.com">Coverstrap</a>
-        </p>
-      </div> <!-- /.container -->
-    </footer>
+							</div><!-- /span12 -->
+						</div><!-- /row-fluid -->
+					</div><!-- /bl-content -->
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
 
-    <script>
-      $(".nav-link").click(function(e) {
-        e.preventDefault();
-        var link = $(this);
-        var href = link.attr("href");
-        $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
-        link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
-      });
 
-    </script>
+
+			<!--=========== CONTACT SECTION ===========-->
+				<section>
+					<div class="bl-box">
+						<h2 >Contact Me</h2>
+					</div>
+					<div class="bl-content">
+						<div class="row-fluid">
+							<div class="span12">
+								<h2>Get in touch</h2>
+
+							<p>
+								<p>jonfriese33@email.com | (360)280-6882 | Seattle, WA</p>
+							</p>
+
+							<p>
+								<a href="https://www.linkedin.com/pub/jon-friese/83/b6/4b8/" class="social-network linkedin"></a>
+								<a href="https://github.com/jonfriese" class="social-network github"></a>
+								<a href="https://twitter.com/JonFriese33" class="social-network twitter"></a>
+								<a href="https://www.facebook.com/jon.friese.5" class="social-network facebook"></a>
+							</p>
+
+						</div>
+					</div>
+					<span class="bl-icon bl-icon-close"></span>
+				</section>
+
+
+
+
+			<!--=========== PROJECTS DESCRIPTIONS SECTION ===========-->
+				<div class="bl-panel-items" id="bl-panel-work-items">
+					<div data-panel="panel-1">
+						<div class="row-fluid">
+							<div class="span8 offset2 tweak">
+								<%= image_tag("project1.jpg") %>
+								<br>
+								<br>
+								<h4>Project Overview</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+								<h4>Project Details</h4>
+								<p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div><!-- /span8 -->
+						</div><!-- /row-fluid -->
+					</div><!-- /panel1 -->
+
+					<div data-panel="panel-2">
+						<div class="row-fluid">
+							<div class="span8 offset2 tweak">
+							<br>
+							<br>
+							<h4>Project Overview</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							<h4>Project Details</h4>
+							<p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div><!-- /span8 -->
+						</div><!-- /row-fluid -->
+					</div><!-- /panel2 -->
+
+					<div data-panel="panel-3">
+						<div class="row-fluid">
+							<div class="span8 offset2 tweak">
+							<%= image_tag("project3.jpg") %>
+							<br>
+							<br>
+							<h4>Project Overview</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							<h4>Project Details</h4>
+							<p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							</div><!-- /span8 -->
+						</div><!-- /row-fluid -->
+					</div><!-- /panel3 -->
+
+					<nav>
+						<span class="bl-next-work">&gt; Next Project</span>
+						<span class="bl-icon bl-icon-close"></span>
+					</nav>
+				</div><!-- /panel-items -->
+
+
+			</div><!-- /bl-main -->
+
+    </div> <!-- /container -->
+
+    <!-- ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster  -->
+
+		<%= javascript_include_tag "jquery-1.8.2.min.js" %>
+		<%= javascript_include_tag "bootstrap.min.js" %>
+		<%= javascript_include_tag "boxlayout.js" %>
+
+		<script type="text/javascript">
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
   </body>
 </html>
