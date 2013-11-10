@@ -22,7 +22,7 @@ Portfolio::Application.configure do
   # fonts path
   config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   # Precompile additional assets
-  config.assets.precompile += %w( .svg .eot .woff .ttf )
+  config.assets.precompile += %w( .svg .eot .woff .ttf .js .css )
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
