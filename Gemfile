@@ -11,6 +11,7 @@ gem 'faker'
 gem 'rake'
 gem 'launchy'
 gem 'therubyracer', :require => 'v8'
+gem 'jquery-migrate-rails'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
