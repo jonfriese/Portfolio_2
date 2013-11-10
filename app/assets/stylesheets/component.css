@@ -55,7 +55,8 @@ a:hover {
 	color: #fff;
 }
 
-.container { height: 100%; }
+.container { height: 100%;
+	margin-left:  -24px; }
 
 .bl-main {
 	position: absolute;
