@@ -7,26 +7,18 @@
       <div class="span12">
         <h2>Latest Blog Entry</h2>
         <article>
-          <h3>Expanding Your Horizons</h3>
-          <%= image_tag("blogentry.jpg") %>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<a href="#">Read more</a></p>
+          <h3><%= @posts.last.title %></h3>
+          <p><%= truncate @posts.last.body, length: 1000 %></p>
+          <p><%= link_to('read more', post_path(@posts.last)) %></p>
         </article>
         <hr>
         <h2>Other Entries</h2>
+        <% @posts.each do |post| %>
         <article>
-          <h3>Blog Post 1</h3>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
+          <h3><%= post.title %></h3>
+          <p><%= truncate post.body, length:300 %><%= link_to('read more', post_path(post)) %></p>
         </article>
-        <article>
-          <h3>Blog Post 2</h3>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
-        </article>
-        <article>
-          <h3>Blog Post 3</h3>
-          <p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
-        </article>
-
+        <% end %>
       </div><!-- /span12 -->
     </div><!-- /row-fluid -->
   </div><!-- /bl-content -->

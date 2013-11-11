@@ -1,0 +1,45 @@
+<body bgcolor="#ee6557">
+  <section>
+    <div class="bl-content">
+      <div class="row-fluid">
+        <div class="span12">
+          <article>
+            <h3><%= @post.title %></h3>
+            <p><%= @post.body%></p>
+          </article>
+          <hr>
+        </div><!-- /span12 -->
+      </div><!-- /row-fluid -->
+
+      <h3>COMMENTS</h3>
+
+
+      <% @comments.each do |comment| %>
+      <tr id="<%= dom_id(comment) %>">
+
+        <h3><%= comment.content %></h3>
+
+        <div class="nav">
+          <% if policy(comment).approve? && comment.approved? == false %>
+          <%= link_to 'Approve', post_comment_path(@commentable, comment, comment: { approved: true }), method: :put %> |
+          <% end %>
+
+          <% if policy(comment).destroy? %>
+          <%= link_to 'Destroy', post_comment_path(@commentable, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
+        </div>
+      </div>
+      <% end %>
+
+      <h3>ADD A COMMENT</h3>
+
+      <%= render 'comments/form' %>
+
+
+      <%= link_to 'Edit', edit_post_path(@post) %> |
+      <%= link_to 'Back', posts_path %>
+
+    </div><!-- /bl-content -->
+    <span class="bl-icon bl-icon-close"></span>
+  </section>
+</body>

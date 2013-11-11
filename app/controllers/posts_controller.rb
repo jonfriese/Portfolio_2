@@ -15,10 +15,7 @@ class PostsController < ApplicationController
     @comments = policy_scope(Comment)
     @comment = Comment.new
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @post }
-    end
+    render :layout => "post_show"
   end
 
   # GET /posts/new
