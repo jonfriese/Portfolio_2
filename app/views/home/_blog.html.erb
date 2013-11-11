@@ -3,6 +3,18 @@
     <h2>My deepest thoughts</h2>
   </div>
   <div class="bl-content">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <% if current_user.present? %>
+          <%= current_user.name %>
+          <%= button_to 'Sign Out', destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%- resource_class.omniauth_providers.each do |provider| %>
+            <%= link_to image_tag("sign_in_twitter.png", alt:'twitter', id:"twitter"), omniauth_authorize_path(resource_name, provider) %>
+          <% end -%>
+        <% end %>
+      </ul>
+    </div> <!-- /.navbar-collapse -->
     <div class="row-fluid">
       <div class="span12">
         <h2>Latest Blog Entry</h2>

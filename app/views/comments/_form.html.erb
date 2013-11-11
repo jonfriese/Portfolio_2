@@ -12,22 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :author %><br />
+    <%= f.label :Name %><br />
     <%= f.text_field :author %>
   </div>
 
   <div class="field">
-    <%= f.label :author_url %><br />
-    <%= f.text_field :author_url %>
-  </div>
-
-   <div class="field">
-    <%= f.label :author_email %><br />
-    <%= f.text_field :author_email %>
-  </div>
-
-  <div class="field">
-    <%= f.label :content %><br />
+    <%= f.label :Comment %><br />
     <%= f.text_area(:content, rows: 5) %>
   </div>
 
@@ -35,6 +25,6 @@
   <%= f.hidden_field :commentable_id, value: @commentable.id %>
 
   <div class="actions">
-    <%= f.submit "Submit for approval" %>
+    <%= f.submit "Submit" %>
   </div>
 <% end %>

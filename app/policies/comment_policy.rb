@@ -11,10 +11,6 @@ class CommentPolicy < ApplicationPolicy
     (user.author? && comment.commentable.author_id == user.id))
   end
 
-  def approve?
-    user.editor? if user.present?
-  end
-
   def update?
     user.editor? if user.present?
   end

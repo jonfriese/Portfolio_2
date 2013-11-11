@@ -457,6 +457,9 @@ div.bl-panel-items > div.bl-hide-current-work {
 	background: #bfbfbf;
 }
 
+#blog_show {
+	background: #ee6557;
+}
 .bl-main.bl-expand-item > section:not(.bl-expand),
 .bl-main.bl-expand-item > section.bl-scale-down {
 	-webkit-transform: scale(0.5);

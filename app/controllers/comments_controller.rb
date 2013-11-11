@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
   def create
     @comment = @commentable.comments.new(params[:comment])
     if @comment.save
-      redirect_to @commentable, notice: "Comment is awaiting moderation."
+      redirect_to @commentable
     else
       instance_variable_set("@#{@resource.singularize}".to_sym, @commentable)
       render template: "#{@resource}/show"
