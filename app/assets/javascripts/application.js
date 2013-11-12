@@ -10,7 +10,7 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= jquery-1.8.2.min.js
-//= bootstrap.min.js
-//= boxlayout.js
-//= require_self
+//= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap
+//= require_tree .
