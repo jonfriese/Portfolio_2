@@ -13,7 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery-1.8.2.min.js
-//= require bootstrap.min.js
-//= require boxlayout.js
+//= require modernizr
 //= require_tree .
