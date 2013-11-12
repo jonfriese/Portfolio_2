@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = policy_scope(Post)
+    @posts = Post.all
   end
 
   # GET /posts/1
@@ -14,7 +14,6 @@ class PostsController < ApplicationController
     @comments = @commentable.comments
     @comments = policy_scope(Comment)
     @comment = Comment.new
-
     render :layout => "post_show"
   end
 
@@ -22,23 +21,18 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @post }
-    end
+    render :layout => "post_create"
   end
 
   # GET /posts/1/edit
   def edit
-    authorize @post
+    render :layout => "post_edit"
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
-    authorize @post
     respond_to do |format|
       if @post.save
         current_user.posts << @post
@@ -54,10 +48,9 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.json
   def update
-    authorize @post
     respond_to do |format|
       if @post.update_attributes(params[:post])
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to "/" }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -69,13 +62,8 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    authorize @post
     @post.destroy
-
-    respond_to do |format|
-      format.html { redirect_to posts_url }
-      format.json { head :no_content }
-    end
+    redirect_to "/"
   end
 
 private

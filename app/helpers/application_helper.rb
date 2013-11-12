@@ -26,5 +26,8 @@ module ApplicationHelper
     @devise_mapping ||= Devise.mappings[:user]
   end
 
+  def me?
+    user_signed_in? && current_user.name = "JonFriese33"
+  end
 end
 

@@ -17,11 +17,18 @@
     </div> <!-- /.navbar-collapse -->
     <div class="row-fluid">
       <div class="span12">
+        <% if me? %>
+          <%= link_to 'Create Post', new_post_path %>
+        <% end %>
         <h2>Latest Blog Entry</h2>
         <article>
           <h3><%= @posts.last.title %></h3>
           <p><%= truncate @posts.last.body, length: 1000 %></p>
           <p><%= link_to('read more', post_path(@posts.last)) %></p>
+          <% if me? %>
+            <%= link_to 'Delete Post', post_path(@posts.last), method: :delete %>
+            <%= link_to 'Edit Post', edit_post_path(@posts.last) %>
+          <% end %>
         </article>
         <hr>
         <h2>Other Entries</h2>
@@ -29,6 +36,10 @@
         <article>
           <h3><%= post.title %></h3>
           <p><%= truncate post.body, length:300 %><%= link_to('read more', post_path(post)) %></p>
+          <% if me? %>
+            <%= link_to 'Delete Post', post_path(post), method: :delete %>
+            <%= link_to 'Edit Post', edit_post_path(post) %>
+          <% end %>
         </article>
         <% end %>
       </div><!-- /span12 -->
