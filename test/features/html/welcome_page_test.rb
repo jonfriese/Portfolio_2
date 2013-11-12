@@ -1,8 +1,8 @@
 require "test_helper"
 
-class WelcomePageTestTest < Capybara::Rails::TestCase
+feature "Check for home page" do
   scenario "Presence of welcome message" do
     visit root_path
-    page.text.must_include "Welcome"
+    page.text.must_include "Hi"
   end
 end

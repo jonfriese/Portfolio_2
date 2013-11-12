@@ -1,12 +1,11 @@
 require "test_helper"
 
 
-feature "Editor can edit a post" do
+feature "I can edit a post" do
   scenario "a post is present" do
 
-    sign_in
-
-    visit post_path(posts(:cr))
+    sign_in_twitter
+    find('#blog').click
 
     click_on "Edit"
     fill_in 'Body', with: 'this post is new'

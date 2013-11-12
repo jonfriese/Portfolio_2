@@ -9,7 +9,7 @@ gem 'omniauth-twitter'
 gem 'figaro'
 gem 'faker'
 gem 'rake'
-gem 'launchy'
+
 gem 'therubyracer', :require => 'v8'
 gem 'jquery-migrate-rails'
 # Bundle edge Rails instead:
@@ -59,17 +59,15 @@ group :development, :test do
   gem "minitest-rails"
   gem "minitest-rails-capybara"
   gem "capybara-webkit"
+  gem "capybara"
   gem "launchy"
   gem "pry-rails"
   gem "pry-doc"
   gem "pry-debugger"
   gem "faker"
-  gem 'simplecov', :require => false
-end
-
-
-group :test do
+  gem 'launchy'
   gem 'turn'
+  gem 'simplecov', :require => false
 end
 
 

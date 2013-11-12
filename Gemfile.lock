@@ -215,6 +215,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass-rails
+  capybara
   capybara-webkit
   coffee-rails (~> 3.2.1)
   devise

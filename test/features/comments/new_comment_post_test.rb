@@ -2,6 +2,7 @@ require "test_helper"
 
 feature "Commenting on a post" do
   scenario "any user is allowed to comment" do
+    skip
 
     visit post_path(posts(:cr))
 

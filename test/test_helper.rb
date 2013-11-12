@@ -29,9 +29,18 @@ class ActionDispatch::IntegrationTest
   include Capybara::DSL
 end
 
-def sign_in(role = :editor)
-  visit new_user_session_path
-  fill_in "Email", with: users(role).email
-  fill_in "Password", with: "password"
-  click_on "Sign in"
+def sign_in_twitter
+  visit root_path
+
+  find('#blog').click
+
+  OmniAuth.config.test_mode = true
+  Capybara.current_session.driver.request.env['devise.mapping'] = Devise.mappings[:user]
+  Capybara.current_session.driver.request.env['omniauth.auth'] = OmniAuth.config.mock_auth[:twitter]
+  OmniAuth.config.add_mock(:twitter,
+                  { uid: '12345',
+                   info: { nickname: 'JonFriese33'},
+                  })
+
+  find('#twitter').click
 end
