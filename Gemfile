@@ -11,6 +11,7 @@ gem 'faker'
 gem 'rake'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog'
 gem 'therubyracer', :require => 'v8'
 gem 'jquery-migrate-rails'
 # Bundle edge Rails instead:
