@@ -1,10 +1,11 @@
 class Post < ActiveRecord::Base
-  attr_accessible :body, :title, :published, :author_id
+  attr_accessible :body, :title, :published,
+                  :author_id, :image, :remote_image_url
   belongs_to :author, class_name: "User"
   has_many :comments, as: :commentable
   validates :title, length: { in: 4..255 }
-  validates :body, presence: true
   scope :published, where(published: true)
+  mount_uploader :image, ImageUploader
 
   def authored_by?(user)
     author == user

@@ -36,9 +36,9 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
         current_user.posts << @post
-        format.html { redirect_to @post }
+        format.html { redirect_to "/" }
       else
-        format.html { redirect_to @post }
+        format.html { redirect_to "/" }
       end
     end
   end

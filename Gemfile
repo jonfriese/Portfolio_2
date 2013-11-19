@@ -9,7 +9,8 @@ gem 'omniauth-twitter'
 gem 'figaro'
 gem 'faker'
 gem 'rake'
-
+gem 'carrierwave'
+gem 'rmagick'
 gem 'therubyracer', :require => 'v8'
 gem 'jquery-migrate-rails'
 # Bundle edge Rails instead:
