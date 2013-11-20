@@ -12,8 +12,12 @@ gem 'rake'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog'
+gem 'unf'
+gem 'globalize'
+gem 'browser-timezone-rails'
 gem 'therubyracer', :require => 'v8'
 gem 'jquery-migrate-rails'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

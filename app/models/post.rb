@@ -6,6 +6,7 @@ class Post < ActiveRecord::Base
   validates :title, length: { in: 4..255 }
   scope :published, where(published: true)
   mount_uploader :image, ImageUploader
+  translates :name, :content
 
   def authored_by?(user)
     author == user

@@ -25,6 +25,7 @@
         <article>
           <h3><%= post.title %></h3>
           <p><%= truncate post.body, length:300 %>
+          <span class="timestamp"><%=l post.created_at %></span>
           <%= image_tag post.image_url.to_s, :alt =>"" %>
           <%= link_to('read more', post_path(post)) %></p>
           <% if me? %>
