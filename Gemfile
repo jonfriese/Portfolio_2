@@ -19,6 +19,7 @@ gem 'browser-timezone-rails'
 gem 'therubyracer', :require => 'v8'
 gem 'jquery-migrate-rails'
 
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -74,6 +75,7 @@ group :development, :test do
   gem "faker"
   gem 'launchy'
   gem 'turn'
+  gem 'brakeman', :require => false
   gem 'simplecov', :require => false
 end
 
