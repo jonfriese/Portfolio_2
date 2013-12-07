@@ -21,6 +21,16 @@
           <%= link_to 'Create Post', new_post_path %>
         <% end %>
         <h2>Blog Entries</h2>
+        <h1><u>Multiple Nested Resources</u><h1>
+        <p style="font-size:20px">If you are only beginning to learn Rails it may seem intuitive to have deeply nested routes to match your deeply nested resources. However, in Rails that isn’t necessary and is considered a bad practice. Your routes should not be nested more than once. Rails make it very easy to nest more than two resources without creating messy URLs and forms.
+
+        This is an example of the incorrect way to use nested resources:</p>
+        <%= image_tag "3deepbad.png" %>
+        <p style="font-size:20px">This is how you should refactor the above routes.rb file:</p>
+        <%= image_tag "3deepgood.png" %>
+        <p style="font-size:20px">Making this small change will make everything you do with your routes so much easier as you continue to develop your project. Using form_for for deeply nested resources is now as simple as having two nested resources. You simply only have two reference the two youngest resources. As all the other relevant data is already contained in second youngest resource.</p>
+
+
         <% @posts.reverse_each do |post| %>
         <article>
           <h3><%= post.title %></h3>
