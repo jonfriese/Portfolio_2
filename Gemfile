@@ -43,7 +43,6 @@ group :development, :test do
   gem 'launchy'
   gem 'turn'
   gem 'brakeman', :require => false
-  gem 'simplecov', :require => false
 end
 
 
