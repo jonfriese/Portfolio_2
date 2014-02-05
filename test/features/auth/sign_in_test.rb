@@ -6,7 +6,7 @@ feature " a user can sign in" do
     sign_in_twitter
 
     find('#blog').click
-    page.must_have_content "Latest Blog Entry"
+    page.must_have_content "Blog Entries"
   end
 end
 

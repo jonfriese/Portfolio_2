@@ -1,5 +1,3 @@
-require "test_helper"
-
 feature "Check for home page" do
   scenario "Presence of welcome message" do
     visit root_path
